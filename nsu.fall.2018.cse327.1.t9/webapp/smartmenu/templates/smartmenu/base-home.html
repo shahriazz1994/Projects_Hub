@@ -1,0 +1,148 @@
+
+{% extends 'smartmenu/layout.html' %}
+{% load static %}
+{% block content %}
+   <section class="masthead text-white text-center">
+
+  <div class="card bg-light">
+  <img class="card-img" src="{% static 'img/bg-masthead.jpg' %}" alt="Card image">
+  <div class="card-img-overlay">
+     <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">Welcome to Food Haven Smart Menu Web Site</h1>
+          </div>
+       <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    <a class="nav-link" href="{% url 'login' %}">
+                  <button type="button" class="btn btn-block btn-lg btn-success">Log in</button>
+                    </a>
+                <a class="nav-link" href="{% url 'register' %}">
+                  <button type="button" class="btn btn-block btn-lg btn-info">Register</button>
+                    </a>
+          </div>
+
+  </div>
+
+</div>
+
+   </section>
+
+
+    <!-- Icons Grid -->
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-screen-desktop m-auto text-primary"></i>
+              </div>
+              <h3>Look at our Foods from Home</h3>
+              <p class="lead mb-0">You can view our foods from your home via our beautiful website.</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-layers m-auto text-primary"></i>
+              </div>
+              <h3>We are app ready </h3>
+              <p class="lead mb-0">We have developed an app with Ar capability for your maximum satisfaction</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="features-icons-icon d-flex">
+                <i class="icon-check m-auto text-primary"></i>
+              </div>
+              <h3>Easy to Use</h3>
+              <p class="lead mb-0">Our Web app and our android app both are easy to use.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Image Showcases -->
+    <section class="showcase">
+      <div class="container-fluid p-0">
+        <div class="row no-gutters">
+
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-1.jpg'%});"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>We Care About Your Health.</h2>
+            <p class="lead mb-0">We deliver the best healthy food in the city. </p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-2.jpg'%});"></div>
+          <div class="col-lg-6 my-auto showcase-text">
+            <h2>Good Test Good Food</h2>
+            <p class="lead mb-0">Good chief makes good foods.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url({% static 'img/bg-showcase-3.jpg'%});"></div>
+          <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+            <h2>View Your Food And Order Now</h2>
+            <p class="lead mb-0">Take your phone or pc and view our food and come to the restaurant to eat them.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">Developers are awesome.....</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="{% static 'img/testimonials-1.jpg' %}" alt="">
+              <h5>Sharieaz Kavier.</h5>
+              <p class="font-weight-light mb-0">"Backend server, api, front end and android app developed by me."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="{% static 'img/testimonials-2.jpg' %}" alt="">
+              <h5>Fred S.</h5>
+              <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="{% static 'img/testimonials-3.jpg' %}" alt="">
+              <h5>Sarah	W.</h5>
+              <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://www.facebook.com/shahriaz.kobir">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+            <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+            <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+            <li class="list-inline-item mr-3">
+                <a href="#">
+                  <i class="fab fa-facebook fa-2x fa-fw"></i>
+                </a>
+              </li>
+
+            </ul>
+
+
+    </section>
+
+
+{% endblock %}

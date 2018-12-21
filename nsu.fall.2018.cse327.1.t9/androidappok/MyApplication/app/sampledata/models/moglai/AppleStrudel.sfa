@@ -1,0 +1,49 @@
+{
+  materials: [
+    {
+      name: 'Default',
+      parameters: [
+        {
+          baseColor: 'AppleStrudel',
+        },
+        {
+          baseColorTint: [
+            1,
+            1,
+            1,
+            1,
+          ],
+        },
+        {
+          metallic: 0,
+        },
+        {
+          roughness: 1,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/moglai/AppleStrudel.obj',
+    name: 'AppleStrudel',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/moglai\\freeobjects&produkte/3dscans/AppleStrudel/AppleStrudel.jpg',
+      name: 'AppleStrudel',
+      pipeline_name: 'freeobjects&produkte/3dscans/AppleStrudel/AppleStrudel.jpg',
+    },
+  ],
+  version: '0.52:1',
+}

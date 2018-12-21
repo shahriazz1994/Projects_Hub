@@ -1,0 +1,19 @@
+{% extends 'smartmenu/layout.html' %}
+{% block content %}
+    <div class="card-deck">
+    {% for c in category %}
+
+
+  <div class="card">
+    <img class="card-img-top" src="{{ c.categoryimage.url }}" alt="Card image cap">
+      <a href="{% url 'catlist' c.id %}" class="btn btn-outline-light text-dark">Show Category</a>
+    <div class="card-body">
+      <h5 class="card-title">{{ c.categoryname }}</h5>
+      <p class="card-text">{{ c.categorydetails }}</p>
+    </div>
+  </div>
+
+
+    {% endfor %}
+    </div>
+{% endblock %}

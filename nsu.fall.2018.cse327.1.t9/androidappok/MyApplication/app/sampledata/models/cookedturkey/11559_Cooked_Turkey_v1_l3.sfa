@@ -1,0 +1,61 @@
+{
+  materials: [
+    {
+      name: 'Cooked_Turkey',
+      parameters: [
+        {
+          baseColor: 'Cooked_Turkey_diffuse',
+        },
+        {
+          baseColorTint: [
+            0.4,
+            0.4,
+            0.4,
+            0.4,
+          ],
+        },
+        {
+          metallic: 0.5,
+        },
+        {
+          roughness: 0.25,
+        },
+        {
+          opacity: null,
+        },
+      ],
+      source: 'build/sceneform_sdk/default_materials/obj_material.sfm',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+    ],
+    collision: {},
+    file: 'sampledata/models/cookedturkey/11559_Cooked_Turkey_v1_l3.obj',
+    name: '11559_Cooked_Turkey_v1_l3',
+    recenter: 'root',
+    scale: 0.040550000000000003,
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/cookedturkey\\Cooked_Turkey_diffuse.jpg',
+      name: 'Cooked_Turkey_diffuse',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'Cooked_Turkey_diffuse.jpg',
+    },
+    {
+      file: 'sampledata/models/cookedturkey\\Cooked_Turkey_bump.jpg',
+      name: 'Cooked_Turkey_bump',
+      params: {
+        usage_type: 'Data',
+      },
+      pipeline_name: 'Cooked_Turkey_bump.jpg',
+    },
+  ],
+  version: '0.52:1',
+}

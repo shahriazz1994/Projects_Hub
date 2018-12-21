@@ -1,0 +1,11 @@
+{% extends 'smartmenu/layout.html' %}
+{% block content %}
+<div class="card" style="width: 100%;">
+  <img class="card-img-top" src="{{ object.foodimage.url }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ object.foodname }}-{{ object.fromcategory}}</h5>
+    <p class="card-text">{{ object.longdetails }}</p>
+    <a href="{% url 'food-list' %}" class="btn btn-primary">Go Back</a>
+  </div>
+</div>
+{% endblock %}

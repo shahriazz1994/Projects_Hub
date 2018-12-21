@@ -1,0 +1,26 @@
+{% extends 'smartmenu/layout.html' %}
+{% block content %}
+    <div class="row">
+
+
+    {% for l in list %}
+            {% if id == l.fromcategory.id %}
+<div class="col-sm-4">
+  <div class="card">
+    <img class="card-img-top" src="{{ l.foodimage.url }}" alt="Card image cap">
+            <a href="{% url 'food-details' l.id %}" class="btn btn-outline-light text-dark">View Details</a>
+    <div class="card-body">
+      <h5 class="card-title">{{ l.foodname }} - {{ l.fromcategory }}</h5>
+      <p class="card-text">{{ l.fooddetails }}</p>
+         <p class="card-text">{{ l.fromcategory }}</p>
+        <p class="card-text">{{ c.categoryname }} {{ l.fromcategory.id }}</p>
+
+    </div>
+  </div>
+</div>
+            {% endif %}
+    {% endfor %}
+
+    </div>
+
+{% endblock %}
